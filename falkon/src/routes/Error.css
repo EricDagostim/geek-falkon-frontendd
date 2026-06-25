@@ -1,0 +1,94 @@
+/* ========================================
+   ERROR / 404 PAGE
+   ======================================== */
+
+.error-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, #1a1a2e 0%, #111122 100%);
+}
+
+.error-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+    background-color: var(--bg-header);
+}
+
+.error-header-logo {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.error-header-actions {
+    display: flex;
+    gap: 16px;
+}
+
+.error-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 40px 20px;
+}
+
+.error-title {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--accent-orange);
+}
+
+.error-number {
+    font-size: 10rem;
+    font-weight: 900;
+    color: var(--text-primary);
+    line-height: 1;
+    letter-spacing: -4px;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.error-subtitle {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-style: italic;
+    margin-top: 8px;
+}
+
+.error-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 24px;
+    margin-top: 24px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: var(--radius-md);
+    color: var(--text-primary);
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background-color var(--transition), transform var(--transition);
+}
+
+.error-btn:hover {
+    background-color: rgba(255, 255, 255, 0.14);
+    transform: translateY(-2px);
+}
+
+.error-btn svg {
+    font-size: 1rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .error-number {
+        font-size: 6rem;
+    }
+}
