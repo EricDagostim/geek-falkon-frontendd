@@ -4,11 +4,8 @@ import './index.css'
 import App from './App.jsx'
 import Error from './routes/Error.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Home from './routes/Home.jsx'
-import Books from './routes/Books.jsx'
-import Geek from './routes/Geek.jsx'
-import Monitors from './routes/Monitors.jsx'
-import Peripherals from './routes/Peripherals.jsx'
+import Page from './routes/Page.jsx'
+import Promos from './routes/Promos.jsx'
 
 const router = createBrowserRouter([
     {
@@ -18,23 +15,11 @@ const router = createBrowserRouter([
         children: [
             {
                 path: "/",
-                element: <Home />
+                element: <Page />
             },
             {
-                path: "books",
-                element: <Books />
-            },
-            {
-                path: "geek",
-                element: <Geek />
-            },
-            {
-                path: "monitors",
-                element: <Monitors />
-            },
-            {
-                path: "peripherals",
-                element: <Peripherals />
+                path: "promocoes",
+                element: <Promos />
             }
         ]
     }

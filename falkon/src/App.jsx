@@ -1,21 +1,15 @@
-
 import { Outlet } from 'react-router-dom'
 import './App.css'
-import Header from './components/Header'
-import Searchbar from './components/Searchbar'
-import Filters from './components/Filters'
+import Header from './components/Header/Header'
 
 function App() {
-
     return (
-        <>
+        <div className="app-layout">
             <Header />
-            <Searchbar />
-            <div style={{ display: 'flex' }}>
-                <Filters />
+            <main className="app-content">
                 <Outlet />
-            </div>
-        </>
+            </main>
+        </div>
     )
 }
 
