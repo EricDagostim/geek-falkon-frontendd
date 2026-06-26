@@ -4,6 +4,39 @@ Este é o repositório do frontend do **Geek Falkon**, um e-commerce moderno vol
 
 ---
 
+## Como iniciar o projeto
+
+### Pré-requisitos
+- [Node.js](https://nodejs.org/) instalado
+
+### Passos
+
+**1. Entre na pasta do projeto:**
+```bash
+cd geek-falkon-frontendd/falkon
+```
+
+**2. Instale as dependências (apenas na primeira vez):**
+```bash
+npm install
+```
+
+**3. Inicie a API mock** (Terminal 1 — porta 3000):
+```bash
+npm run server
+```
+
+**4. Inicie o front-end** (Terminal 2 — porta 5173):
+```bash
+npm run dev
+```
+
+Acesse a aplicação em `http://localhost:5173`.
+
+> **Atenção:** O `npm run server` é necessário para que a lista de produtos seja carregada. Sem ele, a aplicação não encontrará os dados em `http://localhost:3000/produtos`.
+
+---
+
 ## Arquitetura e Estrutura do Projeto
 
 ```
